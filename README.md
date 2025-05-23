@@ -51,7 +51,7 @@ mkdir -p data/my_dataset/annotations
 将你用于训练的图像文件放到 data/my_dataset/images 文件夹下，命名建议简单（如 001.jpg）。
 
 ### 准备标注 JSON 文件
-创建 data/my_dataset/annotations/train.json，格式如[文件](Fine-tuningLLaVA/annotations.json)
+创建 data/my_dataset/annotations/train.json，格式如[文件](annotations.json)
 
 ## 开始微调 LLaVA 模型
 
