@@ -1,7 +1,11 @@
 # Fine-tuningLLaVA
 使用自己的数据在 Windows 上微调 LLaVA 模型
 
-参考[官方说明文档](https://github.com/haotian-liu/LLaVA/blob/main/docs/Windows.md)
+参考[Windows官方说明文档](https://github.com/haotian-liu/LLaVA/blob/main/docs/Windows.md)
+
+[Linux环境官方说明文档](https://github.com/haotian-liu/LLaVA)
+
+[macOS环境官方说明文档](https://github.com/haotian-liu/LLaVA/blob/main/docs/macOS.md)
 
 ## 克隆官方文件夹
 然后直接进入这个文件夹下，之后所有的操作都在这个文件夹下。
