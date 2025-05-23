@@ -51,53 +51,7 @@ mkdir -p data/my_dataset/annotations
 将你用于训练的图像文件放到 data/my_dataset/images 文件夹下，命名建议简单（如 001.jpg）。
 
 ### 准备标注 JSON 文件
-创建 data/my_dataset/annotations/train.json，格式如下（单轮对话）：
-```
-data = [
-{
-"id": "image1",
-"image": "images/image1.jpg",
-"conversations": [
-{
-"from": "human",
-"value": "Describe any defects present on the parts in this image. Focus on 'Scaled', 'Peeled', or 'Rusty' defects."
-},
-{
-"from": "gpt",
-"value": "There is a half frame in the picture, and you can see about eight parts. The leftmost part has obvious peeling and scaling on its surface. The side of the part next to it, that is, in the middle of the pile of parts, also has obvious peeling and scaling. The part at the bottom has obvious peeling and scaling on its surface. All the parts in the picture have greyish (non-reflective) surfaces. This frame of parts is judged to be NC (Non-Conformance)."
-}
-]
-},
-{
-"id": "image_002",
-"image": "images/image2.jpg",
-"conversations": [
-{
-"from": "human",
-"value": "Are there any 'Scaled', 'Peeled', or 'Rusty' defects on the parts shown?"
-},
-{
-"from": "gpt",
-"value": "The picture shows some parts stacked together, two of which have not been penetrated at the bottom. The parts on the left have more or less obvious peeling and scaling. The lower surface of the almost complete part in the lower right corner has obvious peeling and scaling. All the parts in the picture have greyish (non-reflective) surfaces. This frame of parts is judged to be NC (Non-Conformance)."
-}
-]
-},
-{
-"id": "image_003",
-"image": "images/image3.jpg",
-"conversations": [
-{
-"from": "human",
-"value": "Provide a detailed report of part defects."
-},
-{
-"from": "gpt",
-"value": "The picture shows a small half frame of parts stacked together. All the parts in the picture are Greyish (Non-reflective). The parts on the left and bottom have more or less obvious peeling and scaling. This frame of parts is judged to be NC (Non-Conformance)."
-}
-]
-}
-]
-```
+创建 data/my_dataset/annotations/train.json，格式如[文件](Fine-tuningLLaVA/annotations.json)
 
 ## 开始微调 LLaVA 模型
 
